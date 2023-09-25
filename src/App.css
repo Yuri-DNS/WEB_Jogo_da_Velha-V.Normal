@@ -1,0 +1,110 @@
+#root {
+  background-color: #EFEFEF;
+  border-style: solid;
+  border-color: #201C31;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Define uma animação chamada "pulse" */
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Tamanho inicial do elemento */
+  }
+  50% {
+    transform: scale(3); /* Tamanho aumentado em 10% */
+  }
+  100% {
+    transform: scale(1); /* Retorna ao tamanho inicial */
+  }
+}
+
+/* Define uma caixa de modelo de caixa de borda para todos os elementos */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos básicos para o corpo da página */
+body {
+  background-color: #222222;
+  background-image: url(https://i.pinimg.com/originals/60/a5/85/60a58511e5c70a418ac743f7df8134fa.gif);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+/* Estilos para os quadrados no tabuleiro do jogo */
+.square {
+  background: #10394D;
+  border: 2px solid #F2C15C;
+  border-radius: 25px;
+  float: left;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 100px;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 0;
+  text-align: center;
+  color: #F2C15C;
+  text-shadow:  0 0 10px rgba(255, 255, 255, 0.5);
+  width: 100px;
+}
+
+/* Estilos para garantir que as linhas do tabuleiro se ajustem corretamente */
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/* Estilos para a mensagem de status no topo do tabuleiro */
+.status {
+  margin-bottom: 10px;
+}
+
+/* Estilos para a seção de informações do jogo à direita */
+.game-info {
+  margin-left: 20px;
+} 
+
+/* Estilo para o elemento com a classe "title" (título do jogo) */
+.title {
+  font-size: 14px;
+  text-shadow:  0 0 10px rgba(7, 7, 7, 0.5);
+  text-align: center; 
+  color: #df534c; 
+}
+
+/* Estilo para o elemento com a classe "status" (status do jogo) */
+.status {
+  font-size: 20px; 
+  text-align: center;
+  text-shadow:  0 0 10px rgba(7, 7, 7, 0.5);
+  color: #df534c;
+}
+
+/* Estilo para o elemento com a classe "reset" (botão de reiniciar) */
+.reset {
+  font-size: 15px;
+  text-align: center; 
+}
+
+/* Estilo para o elemento com a classe "finish" (mensagem de finalização do jogo) */
+.finish {
+  font-size: 22.5px; 
+  color: #287767;
+  animation: pulse 2s infinite;
+}
+
+
+
+
+
+
+
